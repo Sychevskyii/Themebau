@@ -1,5 +1,81 @@
 //====================================================================================================
 
+.header {
+	background-color: var(--dark-cl);
+	&__container {
+	}
+
+	&__menu {
+		display: flex;
+		align-items: center;
+	}
+
+	&__logo {
+		margin-right: auto;
+		font-size: 20px;
+	}
+}
+.menu {
+
+	&__body {
+	}
+
+	&__list {
+		display: flex;
+		align-items: center;
+		margin-right: 60px;
+		gap: 40px;
+	}
+
+	&__item {
+		padding: 35px 0 35px 0;
+	}
+
+	&__link {
+		padding: 35px 0 35px 0;
+		font-size: 16px;
+		position: relative;
+
+		&::before {
+			content: '';
+			position: absolute;
+			display: block;
+			left: 0;
+			top: 46px;
+			height: 1px;
+			width: 100%;
+			background-color: #fff;
+			transform: translateX(-100%);
+			opacity: 0;
+			visibility: hidden;
+			transition: visibility 0.5s ease, opacity 0.3s ease, transform 0.3s ease;
+		}
+
+		&:hover {
+			&::before {
+				transform: translateX(0);
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+}
+.socials-list {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	&__link {
+	}
+
+	&__icon {
+	}
+}
+.solials-list {
+
+	&__item {
+	}
+}
+
 //====================================================================================================
 
 //Burger
