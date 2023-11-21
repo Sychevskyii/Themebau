@@ -75,6 +75,25 @@
         width: 70px;
     }
 }
+
+.btn-view {
+    position: absolute;
+    bottom: 100px;
+    right: 178px;
+    width: 90px;
+    height: 90px;
+    background-color: #fff;
+    color: var(--dark-cl);
+    border-radius: 50%;
+    font-size: 15px;
+    font-weight: 500;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+
+    &:hover {
+        transform: scale(1.1);
+        box-shadow: 2px 2px 15px 8px #fff;
+    }
+}
 .swiper {
 }
 .swiper-wrapper {
@@ -90,12 +109,13 @@
 .swiper-button-prev {
     position: absolute;
     top: 225px;
-    left: -40px;
+    @include adaptiveValue("left", -50, 400);
+    
 }
 .swiper-button-next {
     position: absolute;
     top: 225px;
-    right: -40px;
+    @include adaptiveValue("right", -50, 400);
 }
 .swiper-scrollbar {
 }
