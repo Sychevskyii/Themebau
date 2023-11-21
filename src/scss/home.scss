@@ -1,3 +1,40 @@
 //====================================================================================================
+.hero {
+    background-color: var(--dark-cl);
+    @include adaptiveValue("height", 480, 300);
+    &__container {
+        
+    }
+
+    &__slider {
+        height: 580px;
+    }
+
+    &__wrapper {
+        
+    }
+
+    &__slide {
+        
+    }
+}
+.swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+
+    &__img {
+    }
+}
+
+.swiper-pagination {
+}
+.swiper-button-prev {
+}
+.swiper-button-next {
+}
+.swiper-scrollbar {
+}
 
 //====================================================================================================
