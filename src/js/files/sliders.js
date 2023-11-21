@@ -37,7 +37,7 @@ function initSliders() {
 			observer: true,
 			observeParents: true,
 			slidesPerView: 1,
-			spaceBetween: 0,
+			spaceBetween: 50,
 			//autoHeight: true,
 			speed: 800,
 
@@ -48,13 +48,13 @@ function initSliders() {
 			//lazy: true,
 
 			/*
-			// Ефекти
+			 Ефекти
 			effect: 'fade',
 			autoplay: {
 				delay: 3000,
 				disableOnInteraction: false,
 			},
-			*/
+
 
 			// Пагінація
 			/*
@@ -65,12 +65,12 @@ function initSliders() {
 			*/
 
 			// Скроллбар
-			/*
-			scrollbar: {
-				el: '.swiper-scrollbar',
-				draggable: true,
-			},
-			*/
+			
+			// scrollbar: {
+			// 	el: '.swiper-scrollbar',
+			// 	draggable: true,
+			// },
+			
 
 			// Кнопки "вліво/вправо"
 			navigation: {
