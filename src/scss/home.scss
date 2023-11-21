@@ -1,13 +1,15 @@
 //====================================================================================================
 .hero {
     background-color: var(--dark-cl);
+    position: relative;
     @include adaptiveValue("height", 480, 300);
     &__container {
-        
+        position: relative;
     }
 
     &__slider {
         height: 580px;
+        
     }
 
     &__wrapper {
@@ -16,6 +18,34 @@
 
     &__slide {
         
+    }
+}
+
+.block-title {
+        position: absolute;
+        top: 175px;
+        left: 200px;
+        width: 516px;
+        padding: 40px 0 40px 0;
+    &__title {
+        font-size: 70px;
+        font-weight: 500;
+        line-height: 1.1;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 1px;
+            width: 70px;
+            background-color: #fff;
+        }
+    }
+    &::before {
+        content: '';
+        height: 1px;
+        width: 70px;
     }
 }
 .swiper {
@@ -31,8 +61,14 @@
 .swiper-pagination {
 }
 .swiper-button-prev {
+    position: absolute;
+    top: 225px;
+    left: -40px;
 }
 .swiper-button-next {
+    position: absolute;
+    top: 225px;
+    right: -40px;
 }
 .swiper-scrollbar {
 }
