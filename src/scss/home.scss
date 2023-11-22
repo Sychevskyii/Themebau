@@ -17,7 +17,7 @@
     @include adaptiveValue("width", 80, 50);
     display: flex;
     justify-content: space-between;
-
+    color: #fff;
     &__item {
         &::after {
             content: '';
@@ -110,13 +110,12 @@
 // About-us section
 //====================================================================================================
 .about-us {
-    @include adaptiveValue("padding-top", 256, 80);
-    @include adaptiveValue("padding-bottom", 156, 80);
-    &__container {
-    }
+    @include adaptiveValue("padding-top", 256, 40);
+    @include adaptiveValue("padding-bottom", 156, 40);
 }
 .intro-block {
     @include adaptiveValue("width", 615, 290);
+    @include adaptiveValue("margin-bottom", 93, 40);
     margin: 0 auto;
     text-align: center;
     &__label {
@@ -131,15 +130,99 @@
     }
 }
 .info-block {
-
-    &__item {
-    }
+    display: flex;
+    justify-content: center;
+    @include adaptiveValue("gap", 110, 40);
+    @media (max-width:580px){
+        flex-direction: column;
+        @include adaptiveValue("padding-left", 40, 20);
+      }
 
     &__item--top-line {
+        @include adaptiveValue("width", 391, 200);
+        @include adaptiveValue("padding-top", 34, 20);
+        position: relative
+    }
+
+    &__text--big {
+        @include adaptiveValue("font-size", 20, 18);
+        line-height: 1.5;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 1px;
+            @include adaptiveValue("width", 400, 210);
+            background-color: var(--dark-cl)
+        }
     }
 
     &__item--action {
+        @include adaptiveValue("width", 463, 250);
+    }
+
+    &__text--small {
+        @include adaptiveValue("font-size", 17, 15);
+        @include adaptiveValue("margin-bottom", 50, 25);
+        line-height: 1.6;
     }
 }
-.btn-about {
+.btn-about span {
+    position: relative;
+    z-index: 50;
+    color: #fff;
+    @include adaptiveValue("padding-left", 39, 18);
 }
+
+.btn-about {
+    @include adaptiveValue("padding-top", 19, 10);
+    @include adaptiveValue("padding-bottom", 19, 10);
+    @include adaptiveValue("width", 170, 80);
+    background-color: var(--dark-cl);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    z-index: 2;
+    outline: 1px solid var(--dark-cl);
+    position: relative;
+    
+
+    &:hover {
+        span {
+            color: var(--dark-cl);
+        }
+        &::before {
+            transform: translateX(0);
+        }
+        &::after {
+            background-color: var(--dark-cl);
+        }
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        @include adaptiveValue("top", 25, 12);
+        @include adaptiveValue("right", 38, 19);
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: #fff;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: #fff;
+        transform: translateX(-125%);
+        transition: transform 0.4s ease;
+    }
+}
+
+
+
