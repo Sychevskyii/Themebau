@@ -8,7 +8,7 @@
 // При необхідності підключаємо додаткові модулі слайдера, вказуючи їх у {} через кому
 // Приклад: { Navigation, Autoplay }
 import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation, Autoplay } from 'swiper/modules';
 /*
 Основні модулі слайдера:
 Navigation, Pagination, Autoplay, 
@@ -33,7 +33,7 @@ function initSliders() {
 		new Swiper('.swiper', { // Вказуємо склас потрібного слайдера
 			// Підключаємо модулі слайдера
 			// для конкретного випадку
-			modules: [Navigation, Pagination],
+			modules: [Navigation, Autoplay],
 			observer: true,
 			observeParents: true,
 			slidesPerView: 1,
@@ -77,7 +77,6 @@ function initSliders() {
 				prevEl: '.swiper-button-prev',
 				nextEl: '.swiper-button-next',
 			},
-			/*
 			// Брейкпоінти
 			breakpoints: {
 				640: {
@@ -86,19 +85,19 @@ function initSliders() {
 					autoHeight: true,
 				},
 				768: {
-					slidesPerView: 2,
+					slidesPerView: 1,
 					spaceBetween: 20,
 				},
 				992: {
-					slidesPerView: 3,
+					slidesPerView: 1,
 					spaceBetween: 20,
 				},
 				1268: {
-					slidesPerView: 4,
-					spaceBetween: 30,
+					slidesPerView: 1,
+					spaceBetween: 50,
 				},
 			},
-			*/
+
 			// Події
 			on: {
 
