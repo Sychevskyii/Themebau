@@ -1,22 +1,12 @@
 //====================================================================================================
+// Hero section
+//====================================================================================================
 .hero {
     background-color: var(--dark-cl);
     position: relative;
     @include adaptiveValue("height", 480, 270);
     &__container {
         position: relative;
-    }
-
-    &__slider {
-        
-    }
-
-    &__wrapper {
-        
-    }
-
-    &__slide {
-        
     }
 }
 
@@ -43,8 +33,6 @@
         @include adaptiveValue("font-size", 14, 12);  
     }
     }
-
-    
 }
 
 .block-title {
@@ -57,7 +45,8 @@
         @include adaptiveValue("font-size", 70, 36);
         font-weight: 500;
         line-height: 1.1;
-
+        color: #fff;
+        text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
         &::before {
             content: '';
             position: absolute;
@@ -93,20 +82,13 @@
         box-shadow: 2px 2px 15px 8px #fff;
     }
 }
-.swiper {
-}
-.swiper-wrapper {
-   
-}
-.swiper-slide {
 
+.swiper-slide {
     &__img {
          @include adaptiveValue("height", 580, 220);
     }
 }
 
-.swiper-pagination {
-}
 .swiper-button-prev {
     position: absolute;
     top: 225px;
@@ -123,7 +105,41 @@
         display: none;
       }
 }
-.swiper-scrollbar {
-}
 
 //====================================================================================================
+// About-us section
+//====================================================================================================
+.about-us {
+    @include adaptiveValue("padding-top", 256, 80);
+    @include adaptiveValue("padding-bottom", 156, 80);
+    &__container {
+    }
+}
+.intro-block {
+    @include adaptiveValue("width", 615, 290);
+    margin: 0 auto;
+    text-align: center;
+    &__label {
+        @include adaptiveValue("margin-bottom", 25, 15);
+        font-weight: 500;
+    }
+
+    &__title {
+        @include adaptiveValue("font-size", 34, 24);
+        line-height: 1.3;
+        font-weight: 500;
+    }
+}
+.info-block {
+
+    &__item {
+    }
+
+    &__item--top-line {
+    }
+
+    &__item--action {
+    }
+}
+.btn-about {
+}

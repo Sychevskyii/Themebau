@@ -35,9 +35,13 @@ function initSliders() {
 			// для конкретного випадку
 			modules: [Navigation, Autoplay],
 			observer: true,
+			loop: true,
 			observeParents: true,
 			slidesPerView: 1,
 			spaceBetween: 50,
+			autoplay: {
+    			delay: 5000,
+  			},
 			//autoHeight: true,
 			speed: 800,
 
