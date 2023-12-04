@@ -132,6 +132,7 @@
 .info-block {
     display: flex;
     justify-content: center;
+    @include adaptiveValue("margin-bottom", 160, 60);
     @include adaptiveValue("gap", 110, 40);
     @media (max-width:580px){
         flex-direction: column;
@@ -174,6 +175,14 @@
     z-index: 50;
     color: #fff;
     @include adaptiveValue("padding-left", 39, 18);
+    @media (max-width: 959.98px) {
+        padding-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+    @media (max-width: 469.98px) {
+        font-size: 13px;
+    }
 }
 
 .btn-about {
@@ -211,6 +220,9 @@
         height: 6px;
         border-radius: 50%;
         background-color: #fff;
+        @media (max-width: 959.98px) {
+            display: none;
+        }
     }
 
     &::before {
