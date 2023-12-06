@@ -236,5 +236,18 @@
     }
 }
 
+.works-list {
+    width: 1306px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    &__item {
+        @include adaptiveValue("width", 304, 200);;
+    }
+
+    &__card {
+    }
+}
+
 
 
