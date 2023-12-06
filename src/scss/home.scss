@@ -111,7 +111,11 @@
 //====================================================================================================
 .about-us {
     @include adaptiveValue("padding-top", 256, 40);
-    @include adaptiveValue("padding-bottom", 156, 40);
+
+    &__container--big {
+        width: 1306px;
+        margin: 0 auto;
+    }
 }
 .intro-block {
     @include adaptiveValue("width", 615, 290);
@@ -235,17 +239,71 @@
         transition: transform 0.4s ease;
     }
 }
+//====================================================================================================
+// Directions section
+//====================================================================================================
+.directions {
+    width: 1336px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    @include adaptiveValue("padding-bottom", 140, 70);
+}
 
 .works-list {
-    width: 1306px;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     gap: 30px;
     &__item {
-        @include adaptiveValue("width", 304, 200);;
+        @include adaptiveValue("width", 304, 200);
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.13) 0%, rgba(0, 0, 0, 0.65) 100%);
+        position: relative;
+        height: 400px;
+        overflow: hidden;
+        &:hover {
+            backdrop-filter: blur(10px);
+           .works-list__info {
+                transform: translateY(-16px);
+           }
+           .works-list__card {
+            filter: blur(7px);
+           }
+        }
     }
 
     &__card {
+        filter: blur(0);
+        transition: filter 0.5s ease;
+    }
+
+	&__info {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        padding: 0 93px 0 50px;
+        transform: translateY(16px);
+        transition: transform 0.5s ease;
+	}
+
+	&__icon {
+	}
+
+	&__text {
+        font-size: 20px;
+        color: #fff;
+        margin: 24px 0 24px 0;
+	}
+
+	&__more {
+        font-size: 16px;
+        color: #fff;
+	}
+}
+
+.more {
+
+    &__icon {
     }
 }
 
