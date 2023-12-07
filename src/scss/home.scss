@@ -174,6 +174,8 @@
         line-height: 1.6;
     }
 }
+
+
 .btn span {
     position: relative;
     z-index: 50;
@@ -425,7 +427,7 @@
     align-items: first baseline;
     position: relative;
     @include adaptiveValue("margin-bottom", 48, 25);
-    @include adaptiveValue("padding-left", 100, 50);
+    @include adaptiveValue("padding-left", 100, 20);
     @include adaptiveValue("padding-right", 100, 50);
     &__title {
         margin-right: 375px;
@@ -462,7 +464,7 @@
             height: 764px;
         }
 		&__container {
-            max-width: 1366px;
+            max-width: 1300px;
             z-index: 2;
             overflow: hidden;
             position: relative;
@@ -491,7 +493,7 @@
             @include adaptiveValue("margin-bottom", 80, 30); 
 
             @media (max-width: 667.98px){
-                @include adaptiveValue("padding-left", 100, 50);
+                @include adaptiveValue("padding-left", 100, 20);
             }
 
             @media (max-width: 419.98px) {
@@ -560,8 +562,6 @@
             transition: opacity 0.4s ease;
 		}
 
-		&__info-block {
-		}
 }
 
 .process-wrapper {
@@ -574,21 +574,64 @@
 
 .block-info {
     @include adaptiveValue("width", 395, 250);
+
+    @media (max-width: 667.98px){
+        @include adaptiveValue("padding-left", 100, 20);
+    }
 		&__text {
             color: #FFF;
             font-size: 17px;
             font-weight: 400;
             line-height: 1.5;
             @include adaptiveValue("margin-bottom", 53, 25); 
+            
 		}
 
-		&__btn {
-		}
+		
+}
+//====================================================================================================
+//Create section
+//====================================================================================================
+.create {
+    @include adaptiveValue("padding-top", 160, 80);
+    @include adaptiveValue("padding-top", 140, 70);
+    &__container {
+    }
+
+    &__wrapper {
+    }
+}
+.img-block {
+
+    &__item {
+    }
+
+    &__item--big {
+    }
+
+    &__bottom {
+    }
+
+    &__item--small {
+    }
+
+    &__item--middle {
+    }
+}
+.create-info {
+
+    &__title {
+    }
+
+    &__text {
+    }
+
+    &__btn {
+    }
 }
 .btn {
 }
-.btn--reverse {
-}
+
 
 
 
