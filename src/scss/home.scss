@@ -178,6 +178,7 @@
     position: relative;
     z-index: 50;
     color: #fff;
+    font-weight: 500;
     @include adaptiveValue("padding-left", 39, 18);
     @media (max-width: 959.98px) {
         padding-left: 0;
@@ -240,7 +241,30 @@
     }
 
     &--reverse {
+        background-color: #fff;
+        outline: 1px solid #fff;
 
+        &:hover {
+            &::after {
+                background-color: #fff;
+            }
+
+            span {
+                color: #fff;
+            }
+        }
+        span {
+            color: var(--dark-cl);
+            font-weight: 500;
+        }
+
+        &::after {
+            background-color: var(--dark-cl);
+        }
+
+        &::before {
+            background-color: var(--dark-cl);
+        }
     }
 }
 //====================================================================================================
@@ -433,32 +457,86 @@
 //====================================================================================================
 .process {
         background-color: var(--dark-cl);
-        @include adaptiveValue("padding-top", 149, 65);
-        @include adaptiveValue("padding-bottom", 161, 70);
+        height: 664px;
 		&__container {
+            max-width: 1366px;
+            z-index: 2;
+            overflow: hidden;
+            position: relative;
+            @include adaptiveValue("padding-top", 149, 65);
+            @include adaptiveValue("padding-bottom", 161, 70);
+            &::after {
+            content: '';
+            width: 641px;
+            z-index: 1;
+            height: 641px;
+            position: absolute;
+            right: -226px;
+            top: -226px;
+            border-radius: 50%;
+            background-color: #202020;
+        }
 		}
 
 		&__title {
+            color: #FFF;
+            font-size: 48px;
+            font-weight: 500;
+            line-height: 1.2;
+            @include adaptiveValue("margin-bottom", 80, 30); 
 		}
 
 		&__list {
+            gap: 24px;
+            display: flex;
+            flex-direction: column;
+            margin-left: 60px;
+            @include adaptiveValue("margin-right", 140, 40);
 		}
 
 		&__item {
+            position: relative;
 		}
 
 		&__text {
+            color: #6F6F6F;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 1.4;
+            
+            &::before {
+                content: '';
+                width: 40px;
+                height: 1px;
+                background-color: #fff;
+                position: absolute;
+                left: -90px;
+                top: 23px;
+            }
+
+            transform: translateX(20px);
 		}
 
 		&__number {
+            opacity: 0;
 		}
 
 		&__info-block {
 		}
 }
-.block-info {
 
+.process-wrapper {
+    display: flex;
+}
+
+.block-info {
+    @include adaptiveValue("width", 395, 250);
 		&__text {
+            color: #FFF;
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 1.5;
+            @include adaptiveValue("margin-bottom", 53, 25); 
 		}
 
 		&__btn {
