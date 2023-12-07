@@ -316,6 +316,9 @@
     }
 
     &__list {
+        display: flex;
+        flex-wrap: wrap;
+        @include adaptiveValue("gap", 100, 50);
     }
 
     &__item {
@@ -324,25 +327,66 @@
     &__image {
     }
 
-    &__label {
+    &__label {   
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 1.4; 
+        margin-top: 34px;
+        margin-bottom: 8px;
     }
 
     &__type {
+        font-size: 15px;
+        font-weight: 500;
     }
 
     &__item--big {
     }
+
+    &__item--top {
+        @include adaptiveValue("padding-left", 100, 50);
+        @include adaptiveValue("padding-top", 160, 60);
+    }
+
+    &__item--bottom {
+        @include adaptiveValue("margin-top", -160, -60);
+    }
 }
 .introduction {
-
+    display: flex;
+    flex-wrap: wrap;
+    align-items: first baseline;
+    position: relative;
+    @include adaptiveValue("margin-bottom", 48, 25);
+    @include adaptiveValue("padding-left", 100, 50);
+    @include adaptiveValue("padding-right", 100, 50);
     &__title {
-        color: var(--dark-cl);
-        font-size: 100px;
+        margin-right: 375px;
+        @include adaptiveValue("font-size", 100, 50);
         font-weight: 500;
         line-height: 1.1;
+        @include adaptiveValue("width", 425, 250);
+        &::after {
+            content: '';
+            position: absolute;
+            @include adaptiveValue("width", 70, 35);
+            height: 1px;
+            background-color: var(--dark-cl);
+            left: 680px;
+            top: 80px;
+        }
+        @media (max-width: 1199.98px) {
+            @include adaptiveValue("margin-bottom", 48, 25);
+
+            &::after {
+                @include adaptiveValue("left", 100, 50);
+                top: -40px;
+            }
+        }
     }
 
     &__btn {
+        
     }
 }
 .btn {
