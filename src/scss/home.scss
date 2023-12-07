@@ -594,39 +594,90 @@
 //====================================================================================================
 .create {
     @include adaptiveValue("padding-top", 160, 80);
-    @include adaptiveValue("padding-top", 140, 70);
+    @include adaptiveValue("padding-bottom", 140, 70);
     &__container {
     }
 
     &__wrapper {
+        display: flex;
+        @media (max-width: 1037.98px) {
+            flex-direction: column;
+        }
     }
 }
 .img-block {
-
+    @media (max-width: 1037.98px) {
+        margin: 0 auto;
+    }
     &__item {
+        filter: grayscale(100%);
+        transition: filter 0.4s ease;
+        &:hover {
+            filter: grayscale(0);
+        }
     }
 
     &__item--big {
+        margin-bottom: 30px;
+        @include adaptiveValue("width", 470, 235);
+        @include adaptiveValue("height", 290, 145);
     }
 
     &__bottom {
+        @include adaptiveValue("width", 575, 300);
     }
 
     &__item--small {
+        @include adaptiveValue("padding-left", 130, 30);
+        @include adaptiveValue("margin-right", 30, 15);
+        @include adaptiveValue("width", 270, 135);
+        @include adaptiveValue("height", 140, 80);
     }
 
     &__item--middle {
+        @include adaptiveValue("width", 270, 135);
+        @include adaptiveValue("height", 250, 125);
     }
 }
 .create-info {
-
+    @include adaptiveValue("padding-top", 93, 40);
     &__title {
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 1.3;
+        width: 357px;
+        @include adaptiveValue("margin-bottom", 37, 20);
     }
 
     &__text {
+        @include adaptiveValue("padding-left", 90, 20);
+        @include adaptiveValue("margin-bottom", 53, 27);
+        @include adaptiveValue("width", 438, 280);
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 1.6; 
+
+        @media (max-width: 1037.98px) {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media (max-width: 483.98px) {
+            @include adaptiveValue("padding-left", 40, 20);
+            margin-left: 0;
+            margin-right: 0;
+        }
     }
 
     &__btn {
+        @include adaptiveValue("margin-left", 90, 20);
+
+        @media (max-width: 1037.98px) {
+            margin-left: auto;
+        }
+        @media (max-width: 483.98px) {
+            @include adaptiveValue("margin-left", 40, 20);
+        }
     }
 }
 .btn {
