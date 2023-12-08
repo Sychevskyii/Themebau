@@ -142,6 +142,7 @@
 		}
 		&::after {
 			bottom: 0;
+			width: 50%;
 		}
 		span {
 			top: calc(50% - toRem(1));
@@ -163,6 +164,7 @@
 			&::after {
 				bottom: calc(50% - toRem(1));
 				transform: rotate(45deg);
+				width: 100%;
 			}
 	}
 			
