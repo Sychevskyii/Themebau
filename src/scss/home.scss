@@ -684,56 +684,106 @@
 //Values section
 //====================================================================================================
 .values {
-
+    @include adaptiveValue("padding-bottom", 214, 107);
     &__container {
     }
 
     &__title {
         font-size: 100px;
+        text-align: center;
         font-weight: 500;
         line-height: 1.2;
         @include adaptiveValue("margin-bottom", 86, 40);
     }
 
     &__list {
+        display: flex;
+        flex-wrap: wrap;
+        @include adaptiveValue("gap", 75, 20);
     }
 
     &__item {
+        @include adaptiveValue("width", 340, 170);
+        @include adaptiveValue("padding-left", 100, 50);
+        position: relative;
     }
 
     &__img {
+        @include adaptiveValue("width", 70, 35);
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 
     &__label {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 1.4; 
+        margin-bottom: 17px;
     }
 
-    &__text {
+    &__text {  
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.6;
+        margin-bottom: 19px;
     }
 
     &__more {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.6;
+        display: flex;
+        align-items: center; 
+        &:hover {
+            .values__icon {
+                transform: translateX(15px);
+            }
+        }
     }
 
     &__icon {
-    }
-
-    &__slider {
-    }
-
-    &__wrapper {
-    }
-
-    &__slide {
-    }
-
-    &__author {
+        fill: var(--dark-cl);
+        transition: transform 0.4s ease;
     }
 }
 //====================================================================================================
 //Swiper section
 //====================================================================================================
 .swiper-section {
+    @include adaptiveValue("padding-top", 244, 100);
+    @include adaptiveValue("padding-bottom", 196, 80);
     background-color: var(--dark-cl);
     &__container {
+    }
+
+    &__wrapper {
+    }
+
+    &__slide {
+        text-align: center;
+    }
+
+    &__img-quote {
+    }
+
+    &__text {
+        color: #FFF;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 1.4; 
+        @include adaptiveValue("width", 673, 300);
+    }
+
+    &__author {
+    }
+}
+.values {
+
+    &__slider {
+    }
+
+    &__img-quote {
     }
 }
 .swiper {
@@ -749,6 +799,7 @@
     &__item {
     }
 }
+
 //====================================================================================================
 //Clients section
 //====================================================================================================
