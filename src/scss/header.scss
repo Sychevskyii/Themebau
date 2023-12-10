@@ -77,6 +77,14 @@
 			}
 		}
 	}
+
+	&__link.current {
+		&::before {
+			transform: translateX(0);
+			opacity: 1;
+			visibility: visible;
+		}
+	}
 }
 .socials-list {
 	display: flex;
