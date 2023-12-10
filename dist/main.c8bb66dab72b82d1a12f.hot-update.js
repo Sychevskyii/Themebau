@@ -6,7 +6,7 @@ self["webpackHotUpdatefls_start"]("main",{
   \********************************************************************************************************************************************************************************************************************************************/
 /***/ (() => {
 
-throw new Error("Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nexpected \"{\".\n   ╷\n81 │     current\r\n   │            ^\n   ╵\n  src\\scss\\header.scss 81:9  @import\n  src\\scss\\style.scss 149:9  root stylesheet");
+throw new Error("Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nexpected \"{\".\n    ╷\n730 │     background-color: var(--dark-cl);\r\n    │                                     ^\n    ╵\n  src\\scss\\home.scss 730:37  @import\n  src\\scss\\style.scss 153:9  root stylesheet");
 
 /***/ })
 
@@ -14,9 +14,9 @@ throw new Error("Module build failed (from ./node_modules/sass-loader/dist/cjs.j
 /******/ function(__webpack_require__) { // webpackRuntimeModules
 /******/ /* webpack/runtime/getFullHash */
 /******/ (() => {
-/******/ 	__webpack_require__.h = () => ("3bbafdf8252557baf6e2")
+/******/ 	__webpack_require__.h = () => ("c4ce148078bb3848cba8")
 /******/ })();
 /******/ 
 /******/ }
 );
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWFpbi5jOGQ5YmRhYzI4Y2MyMTQ0YmQ4ZS5ob3QtdXBkYXRlLmpzIiwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7VUFBQSIsInNvdXJjZXMiOlsid2VicGFjazovL2Zscy1zdGFydC93ZWJwYWNrL3J1bnRpbWUvZ2V0RnVsbEhhc2giXSwic291cmNlc0NvbnRlbnQiOlsiX193ZWJwYWNrX3JlcXVpcmVfXy5oID0gKCkgPT4gKFwiM2JiYWZkZjgyNTI1NTdiYWY2ZTJcIikiXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWFpbi5jOGJiNjZkYWI3MmI4MmQxYTEyZi5ob3QtdXBkYXRlLmpzIiwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7VUFBQSIsInNvdXJjZXMiOlsid2VicGFjazovL2Zscy1zdGFydC93ZWJwYWNrL3J1bnRpbWUvZ2V0RnVsbEhhc2giXSwic291cmNlc0NvbnRlbnQiOlsiX193ZWJwYWNrX3JlcXVpcmVfXy5oID0gKCkgPT4gKFwiYzRjZTE0ODA3OGJiMzg0OGNiYThcIikiXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=
