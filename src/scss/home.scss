@@ -689,7 +689,7 @@
     }
 
     &__title {
-        font-size: 100px;
+        @include adaptiveValue("font-size", 100, 55);
         text-align: center;
         font-weight: 500;
         line-height: 1.2;
@@ -699,13 +699,22 @@
     &__list {
         display: flex;
         flex-wrap: wrap;
-        @include adaptiveValue("gap", 75, 20);
+        justify-content: center;
+        @include adaptiveValue("gap", 75, 40);
+
+        @media (max-width: 651.98px) {
+            justify-content: flex-start;
+        }
     }
 
     &__item {
-        @include adaptiveValue("width", 340, 170);
+        @include adaptiveValue("width", 340, 250);
         @include adaptiveValue("padding-left", 100, 50);
         position: relative;
+
+        @media (max-width: 651.98px) {
+            width: 100%;
+        }
     }
 
     &__img {
@@ -716,7 +725,7 @@
     }
 
     &__label {
-        font-size: 24px;
+        @include adaptiveValue("font-size", 24, 20);
         font-weight: 500;
         line-height: 1.4; 
         margin-bottom: 17px;
@@ -751,8 +760,8 @@
 //Swiper section
 //====================================================================================================
 .swiper-section {
-    @include adaptiveValue("padding-top", 244, 100);
-    @include adaptiveValue("padding-bottom", 196, 80);
+    @include adaptiveValue("padding-top", 128, 70);
+    @include adaptiveValue("padding-bottom", 196, 70);
     background-color: var(--dark-cl);
     overflow: hidden;
     &__container {
@@ -783,12 +792,13 @@
     }
 
     &__img-quote {
-        @include adaptiveValue("margin-bottom", 92, 40);
+        @include adaptiveValue("width", 38, 19);
+        @include adaptiveValue("margin-bottom", 92, 20);
     }
 
     &__text {
         color: #FFF;
-        font-size: 24px;
+        @include adaptiveValue("font-size", 24, 15);
         font-weight: 500;
         line-height: 1.4;
         text-align: center; 
@@ -802,28 +812,42 @@
         line-height: 1.3;
     }
 }
-.values {
 
-    &__slider {
-    }
-
-    &__img-quote {
-    }
-}
-.swiper {
-}
-.swiper-wrapper {
-}
-.swiper-slide-active {
-    z-index: 2;
-}
-.swiper-pagination {
-}
 .second-counter {
     z-index: 2;
     left: 47%;
-    bottom: -120px;
-    &__item {
+    @include adaptiveValue("bottom", -120, 0);
+    position: relative;
+
+    @media (max-width: $mobile) {
+        display: none;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        @include adaptiveValue("left", -548, -135);
+        bottom: 405px;
+        height: 1px;
+        @include adaptiveValue("width", 168, 80);
+        background-color: #fff;
+
+        @media (max-width: $mobile) {
+            display: none;
+        }
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        @include adaptiveValue("right", -576, -120);
+        bottom: 100px;
+        height: 1px;
+        @include adaptiveValue("width", 70, 35);
+        background-color: #fff;
+        transform: rotate(90deg);
+
+        @media (max-width: $mobile) {
+            display: none;
+        }
     }
 }
 
@@ -831,29 +855,61 @@
 //Clients section
 //====================================================================================================
 .clients {
-
+    @include adaptiveValue("padding-top", 155, 75);
+    @include adaptiveValue("padding-bottom", 155, 75);
     &__container {
+        max-width: 975px;
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 779.98px) {
+            flex-direction: column;
+        }
     }
 
     &__title-block {
+        @include adaptiveValue("margin-right", 260, 0);
+
+        @media (max-width: 779.98px) {
+            margin-right: 0;
+            width: 100%;
+            text-align: center;
+        }
     }
 
     &__uppertitle {
+        font-weight: 500;
+        @include adaptiveValue("margin-bottom", 27, 15);
     }
 
     &__title {
+        @include adaptiveValue("font-size", 34, 24);
+        font-weight: 500;
+        line-height: 1.3;
+        @include adaptiveValue("width", 268, 125); 
+
+        @media (max-width: 779.98px) {
+            width: 100%;
+            margin-bottom: 20px;
+        }
     }
 
     &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        @include adaptiveValue("row-gap", 50, 30);
+
+        @media (max-width: 779.98px) {
+            width: 70%;
+            justify-content: center;
+        }
     }
 
-    &__item {
-    }
-
-    &__icon {
-    }
 }
-
+//====================================================================================================
+//New section
+//====================================================================================================
 
 
 
