@@ -990,6 +990,11 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        @media (max-width: 649.98px) {
+            flex-direction: column;
+            justify-content: center;
+        }
     }
 
     &__title {
@@ -1017,7 +1022,10 @@
         position: absolute;
         left: 47%;
         bottom: 38px;
-        transition: transform 0.4s ease;
+
+        @media (max-width: 649.98px) {
+            display: none;
+        }
     }
 
     &__link {

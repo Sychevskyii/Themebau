@@ -11,11 +11,11 @@
 			height: 52px;
 		  }
 	}
+}
 
-	&__logo {
-		margin-right: auto;
-		@include adaptiveValue("font-size", 20, 15);
-	}
+.logo {
+	margin-right: auto;
+	@include adaptiveValue("font-size", 20, 15);
 }
 .menu {
 

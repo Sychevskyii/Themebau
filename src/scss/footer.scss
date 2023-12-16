@@ -1,3 +1,114 @@
 //====================================================================================================
+.footer {
+    @include adaptiveValue("padding-top", 121, 60);
+    @include adaptiveValue("padding-bottom", 130, 65);
+    background-color: var(--dark-cl);
+    overflow: hidden;
+    &__container {
+        position: relative;
+        &::after {
+            content: '';
+            @include adaptiveValue("width", 641, 200);
+            @include adaptiveValue("height", 641, 200);
+            position: absolute;
+            right: -25%;
+            top: 23%;
+            border-radius: 50%;
+            background-color: #202020;
+            @media (max-width: 667.98px){
+                display: none;
+            } 
+        }
+    }
+}
+.block-wrapper {
+    color: #fff;
+    display: flex;
+}
+.left-block {
+    @include adaptiveValue("width", 400, 280);
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        top: -40%;
+        right: 0;
+        background-color: #202020;
+        width: 1px;
+        height: 200%;
+    }
+    &__text {
+        @include adaptiveValue("margin-top", 30, 15);
+        @include adaptiveValue("margin-bottom", 76, 35);
+        width: 240px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.6; 
+    }
+
+}
+.footer-logo {
+    @include adaptiveValue("font-size", 34, 20);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.3; 
+}
+.contacts {
+    @include adaptiveValue("margin-bottom", 81, 40);
+    &__item {
+    }
+
+    &__link {
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 1.7; 
+    }
+}
+.socials {
+    display: flex;
+    gap: 20px;
+}
+.right-block {
+    display: flex;
+    flex-direction: column;
+}
+.subscribe {
+    @include adaptiveValue("margin-bottom", 40, 20);
+    color: #969696;
+    font-size: 15px;
+    font-weight: 500;
+}
+.footer-form {
+    @include adaptiveValue("width", 570, 280);
+    &__custom-placeholder {
+    }
+
+    &__input {
+        background-color: transparent;
+        outline: none;
+        height: 32px;
+    }
+
+    &__button {
+    }
+}
+.links-block {
+}
+.footer-nav {
+
+    &__item {
+    }
+
+    &__link {
+    }
+}
+.footer-credits {
+    margin-top: auto;
+    margin-left: auto;
+    z-index: 2;
+    color: #969696;
+    font-weight: 400;
+    line-height: 1.3; 
+}
 
 //====================================================================================================
