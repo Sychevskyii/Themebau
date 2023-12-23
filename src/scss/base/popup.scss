@@ -59,3 +59,45 @@ body::after {
 		visibility: visible;
 	}
 }
+//====================================================================================================
+// Popup-swiper
+//====================================================================================================
+.popup-swiper {
+
+	&__wrapper {
+	}
+
+	&__slide {
+		width: 770px;
+	}
+
+	&__img {
+		width: 100%;
+	}
+
+	&__title-block {
+	}
+
+	&__title {
+	}
+
+	&__subtitle {
+	}
+
+	&__counter {
+	}
+
+	&__item {
+	}
+}
+.swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.swiper-counter {
+
+	&__item {
+	}
+}

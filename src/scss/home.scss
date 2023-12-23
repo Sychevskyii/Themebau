@@ -86,6 +86,7 @@
 .swiper-slide {
     &__img {
          @include adaptiveValue("height", 580, 220);
+         width: 100%;
     }
 }
 
@@ -278,7 +279,7 @@
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    @include adaptiveValue("padding-bottom", 140, 70);
+    @include adaptiveValue("padding-bottom", 140, 60);
 }
 
 .works-list {
@@ -341,7 +342,7 @@
 // Directions section
 //====================================================================================================
 .featured {
-    @include adaptiveValue("padding-bottom", 157, 75);
+    @include adaptiveValue("padding-bottom", 157, 40);
     &__list {
         display: flex;
         flex-wrap: wrap;
@@ -461,15 +462,15 @@
         background-color: var(--dark-cl);
         height: 664px;
         @media (max-width: 667.98px){
-            height: 764px;
+            height: 710px;
         }
 		&__container {
             max-width: 1300px;
             z-index: 2;
             overflow: hidden;
             position: relative;
-            @include adaptiveValue("padding-top", 149, 65);
-            @include adaptiveValue("padding-bottom", 161, 70);
+            @include adaptiveValue("padding-top", 149, 40);
+            @include adaptiveValue("padding-bottom", 161, 40);
             &::after {
             content: '';
             @include adaptiveValue("width", 641, 200);
@@ -593,8 +594,8 @@
 //Create section
 //====================================================================================================
 .create {
-    @include adaptiveValue("padding-top", 160, 80);
-    @include adaptiveValue("padding-bottom", 140, 70);
+    @include adaptiveValue("padding-top", 160, 40);
+    @include adaptiveValue("padding-bottom", 140, 40);
     &__container {
     }
 
@@ -684,7 +685,7 @@
 //Values section
 //====================================================================================================
 .values {
-    @include adaptiveValue("padding-bottom", 214, 107);
+    @include adaptiveValue("padding-bottom", 214, 40);
     &__container {
     }
 
@@ -760,8 +761,8 @@
 //Swiper section
 //====================================================================================================
 .swiper-section {
-    @include adaptiveValue("padding-top", 128, 70);
-    @include adaptiveValue("padding-bottom", 196, 70);
+    @include adaptiveValue("padding-top", 128, 40);
+    @include adaptiveValue("padding-bottom", 196, 40);
     background-color: var(--dark-cl);
     overflow: hidden;
     &__container {
@@ -855,8 +856,8 @@
 //Clients section
 //====================================================================================================
 .clients {
-    @include adaptiveValue("padding-top", 155, 75);
-    @include adaptiveValue("padding-bottom", 155, 75);
+    @include adaptiveValue("padding-top", 155, 40);
+    @include adaptiveValue("padding-bottom", 155, 40);
     &__container {
         max-width: 975px;
         display: flex;
@@ -911,7 +912,7 @@
 //New section
 //====================================================================================================
 .new {
-    @include adaptiveValue("padding-bottom", 160, 70);
+    @include adaptiveValue("padding-bottom", 160, 40);
     &__container {
         position: relative;
 
