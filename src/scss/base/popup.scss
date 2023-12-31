@@ -55,6 +55,7 @@ body::after {
 	width: 100%;
 	max-width: 900px;
 	border-radius: 20px;
+	position: relative;
 	.lock & {
 		visibility: visible;
 	}
@@ -62,6 +63,17 @@ body::after {
 //====================================================================================================
 // Popup-swiper
 //====================================================================================================
+.popup__close {
+	position: absolute;
+	rigt: 0;
+	top: 0;
+	&::before {
+		content: '';
+		width: 10px;
+		height: 1px;
+		backgrond-color: var(--dark-cl);
+	}
+}
 .popup-swiper {
 
 	&__wrapper {
