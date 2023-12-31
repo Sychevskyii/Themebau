@@ -6,7 +6,7 @@ self["webpackHotUpdatefls_start"]("main",{
   \********************************************************************************************************************************************************************************************************************************************/
 /***/ (() => {
 
-throw new Error("Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nexpected \";\".\n   ╷\n69 │     &::before {\r\n   │      ^\n   ╵\n  src\\scss\\base\\popup.scss 69:3  @import\n  src\\scss\\base.scss 6:9         @import\n  src\\scss\\style.scss 143:9      root stylesheet");
+throw new Error("Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nexpected \"{\".\n   ╷\n76 │         wi\r\n   │           ^\n   ╵\n  src\\scss\\base\\popup.scss 76:5  @import\n  src\\scss\\base.scss 6:9         @import\n  src\\scss\\style.scss 143:9      root stylesheet");
 
 /***/ })
 
@@ -14,9 +14,9 @@ throw new Error("Module build failed (from ./node_modules/sass-loader/dist/cjs.j
 /******/ function(__webpack_require__) { // webpackRuntimeModules
 /******/ /* webpack/runtime/getFullHash */
 /******/ (() => {
-/******/ 	__webpack_require__.h = () => ("911bd2bd7fa2a2a09797")
+/******/ 	__webpack_require__.h = () => ("6d7b7581bbc5ae29f6ba")
 /******/ })();
 /******/ 
 /******/ }
 );
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWFpbi5mZTk3MDQzNjVlM2I4ZTRjYWM5NS5ob3QtdXBkYXRlLmpzIiwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7VUFBQSIsInNvdXJjZXMiOlsid2VicGFjazovL2Zscy1zdGFydC93ZWJwYWNrL3J1bnRpbWUvZ2V0RnVsbEhhc2giXSwic291cmNlc0NvbnRlbnQiOlsiX193ZWJwYWNrX3JlcXVpcmVfXy5oID0gKCkgPT4gKFwiOTExYmQyYmQ3ZmEyYTJhMDk3OTdcIikiXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWFpbi5iYmYzMjE2YTc5NjAxN2Q5ODE3Yy5ob3QtdXBkYXRlLmpzIiwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7VUFBQSIsInNvdXJjZXMiOlsid2VicGFjazovL2Zscy1zdGFydC93ZWJwYWNrL3J1bnRpbWUvZ2V0RnVsbEhhc2giXSwic291cmNlc0NvbnRlbnQiOlsiX193ZWJwYWNrX3JlcXVpcmVfXy5oID0gKCkgPT4gKFwiNmQ3Yjc1ODFiYmM1YWUyOWY2YmFcIikiXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=

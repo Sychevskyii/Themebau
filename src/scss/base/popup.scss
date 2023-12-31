@@ -65,13 +65,16 @@ body::after {
 //====================================================================================================
 .popup__close {
 	position: absolute;
-	rigt: 0;
+	right: 0;
 	top: 0;
 	&::before {
 		content: '';
 		width: 10px;
 		height: 1px;
 		backgrond-color: var(--dark-cl);
+		padding: 10px;
+		width: 100px;
+		
 	}
 }
 .popup-swiper {

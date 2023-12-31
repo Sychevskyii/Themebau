@@ -6,7 +6,7 @@ self["webpackHotUpdatefls_start"]("main",{
   \********************************************************************************************************************************************************************************************************************************************/
 /***/ (() => {
 
-throw new Error("Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nexpected \"{\".\n   ╷\n73 │         he\r\n   │           ^\n   ╵\n  src\\scss\\base\\popup.scss 73:5  @import\n  src\\scss\\base.scss 6:9         @import\n  src\\scss\\style.scss 143:9      root stylesheet");
+throw new Error("Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nExpected escape sequence.\n   ╷\n74 │         backgrond-color: var(--dark-cl);\\\r\n   │                                          ^\n   ╵\n  src\\scss\\base\\popup.scss 74:36  @import\n  src\\scss\\base.scss 6:9          @import\n  src\\scss\\style.scss 143:9       root stylesheet");
 
 /***/ })
 
@@ -14,9 +14,9 @@ throw new Error("Module build failed (from ./node_modules/sass-loader/dist/cjs.j
 /******/ function(__webpack_require__) { // webpackRuntimeModules
 /******/ /* webpack/runtime/getFullHash */
 /******/ (() => {
-/******/ 	__webpack_require__.h = () => ("3d82e59d97d8aa7edeeb")
+/******/ 	__webpack_require__.h = () => ("1c642089f64df5a11d24")
 /******/ })();
 /******/ 
 /******/ }
 );
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWFpbi4xZmE0ZjEyZmNjNTVlMjEzOWI3ZS5ob3QtdXBkYXRlLmpzIiwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7VUFBQSIsInNvdXJjZXMiOlsid2VicGFjazovL2Zscy1zdGFydC93ZWJwYWNrL3J1bnRpbWUvZ2V0RnVsbEhhc2giXSwic291cmNlc0NvbnRlbnQiOlsiX193ZWJwYWNrX3JlcXVpcmVfXy5oID0gKCkgPT4gKFwiM2Q4MmU1OWQ5N2Q4YWE3ZWRlZWJcIikiXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWFpbi4wYmQ1ODg1YmU0ZDg1ODUzMTY1Ni5ob3QtdXBkYXRlLmpzIiwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7VUFBQSIsInNvdXJjZXMiOlsid2VicGFjazovL2Zscy1zdGFydC93ZWJwYWNrL3J1bnRpbWUvZ2V0RnVsbEhhc2giXSwic291cmNlc0NvbnRlbnQiOlsiX193ZWJwYWNrX3JlcXVpcmVfXy5oID0gKCkgPT4gKFwiMWM2NDIwODlmNjRkZjVhMTFkMjRcIikiXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=

@@ -6,7 +6,7 @@ self["webpackHotUpdatefls_start"]("main",{
   \********************************************************************************************************************************************************************************************************************************************/
 /***/ (() => {
 
-throw new Error("Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nexpected \"{\".\n   ╷\n66 │     &\r\n   │      ^\n   ╵\n  src\\scss\\base\\popup.scss 66:3  @import\n  src\\scss\\base.scss 6:9         @import\n  src\\scss\\style.scss 143:9      root stylesheet");
+throw new Error("Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nexpected \"{\".\n   ╷\n77 │         op\r\n   │           ^\n   ╵\n  src\\scss\\base\\popup.scss 77:5  @import\n  src\\scss\\base.scss 6:9         @import\n  src\\scss\\style.scss 143:9      root stylesheet");
 
 /***/ })
 
@@ -14,9 +14,9 @@ throw new Error("Module build failed (from ./node_modules/sass-loader/dist/cjs.j
 /******/ function(__webpack_require__) { // webpackRuntimeModules
 /******/ /* webpack/runtime/getFullHash */
 /******/ (() => {
-/******/ 	__webpack_require__.h = () => ("28342113547c2e81634f")
+/******/ 	__webpack_require__.h = () => ("d491e01f6f226a8f7b2f")
 /******/ })();
 /******/ 
 /******/ }
 );
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWFpbi43N2E5Y2RiY2MzNDJkYmVhYWVlMi5ob3QtdXBkYXRlLmpzIiwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7VUFBQSIsInNvdXJjZXMiOlsid2VicGFjazovL2Zscy1zdGFydC93ZWJwYWNrL3J1bnRpbWUvZ2V0RnVsbEhhc2giXSwic291cmNlc0NvbnRlbnQiOlsiX193ZWJwYWNrX3JlcXVpcmVfXy5oID0gKCkgPT4gKFwiMjgzNDIxMTM1NDdjMmU4MTYzNGZcIikiXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWFpbi4yZTQ0ZWJmMWRiNjI5MzY5YjhjNS5ob3QtdXBkYXRlLmpzIiwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7VUFBQSIsInNvdXJjZXMiOlsid2VicGFjazovL2Zscy1zdGFydC93ZWJwYWNrL3J1bnRpbWUvZ2V0RnVsbEhhc2giXSwic291cmNlc0NvbnRlbnQiOlsiX193ZWJwYWNrX3JlcXVpcmVfXy5oID0gKCkgPT4gKFwiZDQ5MWUwMWY2ZjIyNmE4ZjdiMmZcIikiXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=

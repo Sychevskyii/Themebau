@@ -6,7 +6,7 @@ self["webpackHotUpdatefls_start"]("main",{
   \********************************************************************************************************************************************************************************************************************************************/
 /***/ (() => {
 
-throw new Error("Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nexpected \"{\".\n   ╷\n75 │         position\r\n   │                 ^\n   ╵\n  src\\scss\\base\\popup.scss 75:11  @import\n  src\\scss\\base.scss 6:9          @import\n  src\\scss\\style.scss 143:9       root stylesheet");
+throw new Error("Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nexpected \"{\".\n   ╷\n77 │         he\r\n   │           ^\n   ╵\n  src\\scss\\base\\popup.scss 77:5  @import\n  src\\scss\\base.scss 6:9         @import\n  src\\scss\\style.scss 143:9      root stylesheet");
 
 /***/ })
 
@@ -14,9 +14,9 @@ throw new Error("Module build failed (from ./node_modules/sass-loader/dist/cjs.j
 /******/ function(__webpack_require__) { // webpackRuntimeModules
 /******/ /* webpack/runtime/getFullHash */
 /******/ (() => {
-/******/ 	__webpack_require__.h = () => ("8bbb55e49c78426ec7d5")
+/******/ 	__webpack_require__.h = () => ("09fdcd5e58d85cbc4da6")
 /******/ })();
 /******/ 
 /******/ }
 );
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWFpbi44NDZlMTljZDBiZTkxYjIxMjhhYy5ob3QtdXBkYXRlLmpzIiwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7VUFBQSIsInNvdXJjZXMiOlsid2VicGFjazovL2Zscy1zdGFydC93ZWJwYWNrL3J1bnRpbWUvZ2V0RnVsbEhhc2giXSwic291cmNlc0NvbnRlbnQiOlsiX193ZWJwYWNrX3JlcXVpcmVfXy5oID0gKCkgPT4gKFwiOGJiYjU1ZTQ5Yzc4NDI2ZWM3ZDVcIikiXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWFpbi40YjNjYzliOTFmMTNiYjAzYjk2OS5ob3QtdXBkYXRlLmpzIiwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7VUFBQSIsInNvdXJjZXMiOlsid2VicGFjazovL2Zscy1zdGFydC93ZWJwYWNrL3J1bnRpbWUvZ2V0RnVsbEhhc2giXSwic291cmNlc0NvbnRlbnQiOlsiX193ZWJwYWNrX3JlcXVpcmVfXy5oID0gKCkgPT4gKFwiMDlmZGNkNWU1OGQ4NWNiYzRkYTZcIikiXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=
